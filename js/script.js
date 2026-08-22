@@ -79,6 +79,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     top: offsetPosition,
                     behavior: "smooth"
                 });
+                
+                // Perbarui URL dengan ID bagian yang dituju
+                history.pushState(null, null, targetId);
             }
         });
     });
