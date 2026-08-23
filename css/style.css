@@ -321,6 +321,20 @@ ul {
     font-size: 0.95rem;
 }
 
+.read-more-btn {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.read-more-btn:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
 /* Katalog Hasil Tani Slider */
 .agri-grid {
     display: flex;

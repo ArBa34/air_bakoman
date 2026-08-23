@@ -85,4 +85,19 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // 5. Read More Toggle for History Cards
+    const readMoreBtns = document.querySelectorAll('.read-more-btn');
+    readMoreBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const moreText = this.previousElementSibling.querySelector('.more-text');
+            if (moreText.style.display === 'none' || moreText.style.display === '') {
+                moreText.style.display = 'inline';
+                this.innerText = 'Tutup ringkasan';
+            } else {
+                moreText.style.display = 'none';
+                this.innerText = 'Baca selengkapnya...';
+            }
+        });
+    });
 });
